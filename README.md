@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://githubusercontent.com" alt="Broccoli" width="50" height="50" /><br>
-  <strong>Font/Size Alternative:</strong>
-</p>
 
 <div align="center">
 
