@@ -3,4 +3,4 @@ def greet(name):
   name = input("Enter yo name, my nigga: ")
 # Run it
 greet()
-l
+
