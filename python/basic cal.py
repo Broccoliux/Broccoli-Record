@@ -16,4 +16,4 @@ elif choice == 4:
     print(num1 / num2)
 
 else:
-    print("Invalid choice")
+    print("pagal tu nii tu")
