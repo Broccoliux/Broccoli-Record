@@ -2,6 +2,8 @@ import requests
 import pandas as pd
 import matplotlib.pyplot as plt
 
+print("Everything works!")
+
 
 
 url = "https://api.github.com"
