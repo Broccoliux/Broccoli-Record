@@ -1,5 +1,6 @@
 import requests
 from datetime import datetime, timedelta
+import pandas as pd
 
 
 # We need coordinates to get weather data
@@ -37,7 +38,7 @@ print(f"Lahore: {tokyo_temp}°C")
 """Get 7 days of weather
 The Open-Meteo API can give us historical data:"""
 
-from datetime import datetime, timedelta
+
 
 today = datetime.now()
 week_ago = today - timedelta(days=7)
@@ -60,21 +61,16 @@ print(data)
 
 
 
-
-"""WORKING WITH PANDAS"""
-
-import pandas as pd
 # Extract the daily data
+# Extract the daily dictionary
 daily_data = data['daily']
 
-# Create a DataFrame
+# Create the DataFrame and convert dates in one step
 df = pd.DataFrame({
-    'date    ': daily_data['time'],
+    'date': pd.to_datetime(daily_data['time']),
     'max_temp': daily_data['temperature_2m_max'],
     'min_temp': daily_data['temperature_2m_min']
 })
 
-# Convert date strings to datetime
-df['date'] = pd.to_datetime(df['date'])
-
 print(df)
+
