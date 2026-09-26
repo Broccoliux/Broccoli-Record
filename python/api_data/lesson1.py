@@ -45,5 +45,21 @@ status_counts.plot(kind="bar")
 plt.xlabel("Status")
 plt.ylabel("Number of Issues")
 plt.title("Open vs Closed Issues")
-
 plt.show()
+
+
+
+plt.figure(figsize=(10, 5))
+
+plt.bar(df["number"].astype(str), df["comments"])
+
+plt.xlabel("Issue Number")
+plt.ylabel("Comments")
+plt.title("Comments per GitHub Issue")
+
+plt.xticks(rotation=45)
+
+plt.tight_layout()
+plt.show()
+
+
