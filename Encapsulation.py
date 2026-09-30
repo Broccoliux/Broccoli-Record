@@ -144,4 +144,22 @@ def show_info(**kwargs):
 show_info(name="Broccoli", age= 19, city="bahawalpur")
 
 
-#
+# Decorators @
+
+def log_function(func):
+    def wrapper():
+        print("Function start")
+        func()
+        print("Function end")
+    return wrapper
+
+
+@log_function
+def hello():
+    print("Hello")
+
+
+hello()
+
+
+# Generators — yield
