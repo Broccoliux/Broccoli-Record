@@ -123,3 +123,25 @@ car3 = Car("Honda")
 
 print(car1 == car2)
 print(car1 == car3)
+
+
+
+# *args
+
+
+def add(*args):
+  return sum(args)
+
+print(add(1, 2))
+print(add(1,2,4,5))
+
+
+# **kwargs
+
+def show_info(**kwargs):
+    print(kwargs)
+
+show_info(name="Broccoli", age= 19, city="bahawalpur")
+
+
+#
