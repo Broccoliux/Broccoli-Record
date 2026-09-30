@@ -107,3 +107,19 @@ team = Team(["Ali", "Ahmed", "Sara"])
 print(len(team))
 
 
+# __eq__
+
+class Car:
+    def __init__(self, brand):
+        self.brand = brand
+
+    def __eq__(self, other):
+        return self.brand == other.brand
+
+
+car1 = Car("Toyota")
+car2 = Car("Toyota")
+car3 = Car("Honda")
+
+print(car1 == car2)
+print(car1 == car3)
