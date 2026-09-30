@@ -171,3 +171,15 @@ def numbers():
 
 for number in numbers():
     print(number)
+
+
+
+
+# try and except
+
+try:
+    print("Running")
+except:
+    print("Error")
+finally:
+    print("Finished")
